@@ -1,12 +1,4 @@
-// body background change 
-const Body = document.querySelector("body")
-function backgroundChange() {
-    setInterval(function () {
-        const gradient = `linear-gradient(${Math.floor(Math.random() * 360)}deg, #001f12, #3a261e)`;
-        Body.style.background = gradient
-    },5000)
-}
-backgroundChange();
+
 // smallScrollIcon
 const smallScrollIcon = document.querySelector("#smallScrollIcon")
 window.addEventListener("scroll", function (e) {
@@ -70,3 +62,4 @@ progressBar(".bootstrap", 80)
 progressBar(".mangodb", 75)
 progressBar(".expressjs", 70)
 progressBar(".reactjs", 90)
+
