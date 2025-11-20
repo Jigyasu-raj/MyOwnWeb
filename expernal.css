@@ -322,7 +322,7 @@
      border-radius: 25px;
      width: 90%;
      padding: 1rem;
-     height:auto;
+     height:250px;
      z-index: 1;   
      position: relative;
 
@@ -643,5 +643,6 @@
      #footer {
          font-size: 14px;
      }
+
 
  }
