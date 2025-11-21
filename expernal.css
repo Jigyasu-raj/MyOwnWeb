@@ -320,6 +320,7 @@
      align-items: center;
      height: calc(100vh - 50px);
      padding: 1rem 0rem;
+     gap: 1rem;
  }
 
  #section4 .education {
@@ -333,47 +334,35 @@
 
  }
 
- #section4 .education .education-container {
+ #section4 .education .borderColor {
+     padding: 0.25rem;
+     width: 90%;
+     border-radius: 25px;
+     background: conic-gradient(from var(--angle), var(--color1), var(--color2), var(--color3), var(--color4));
+     animation: Move 4s linear infinite;
+ }
+
+ #section4 .education .borderColor .education-container {
      display: flex;
      justify-content: space-evenly;
      align-items: center;
      background: black;
      border-radius: 25px;
-     width: 90%;
-     padding: 1rem;
-     height: 250px;
+     width: 100%;
+     padding: 0.8rem;
+     height: 220px;
      position: relative;
  }
 
- #section4 .education .education-container::before {
-     content: "";
-     position: absolute;
-     inset: -3px;
-     z-index: -1;
-     border-radius: inherit;
-     background:
-         conic-gradient(from var(--angle), var(--color1), var(--color2), var(--color3), var(--color4));
-     ;
-     animation: Move 4s linear infinite;
- }
 
- /* #section4 .education .education-container::after {
-     content: "";
-     position: absolute;
-     inset: 0;
-     background: black;
-     border-radius: inherit;
-     z-index: -1;
- } */
-
- #section4 .education .education-container .image img {
+ #section4 .education .borderColor .education-container .image img {
      width: 100px;
      height: 100px;
      border-radius: 50%;
      filter: contrast(1.3);
  }
 
- #section4 .education .education-container .text {
+ #section4 .education .borderColor .education-container .text {
      padding: 1rem;
  }
 
@@ -396,9 +385,16 @@
 
  }
 
- #section5 .projects-container .projects {
-     width: 260px;
-     height: 340px;
+ #section5 .projects-container .borderColor {
+     padding: 0.25rem;
+     border-radius: 25px;
+     background: conic-gradient(from var(--angle), var(--color1), var(--color2), var(--color3), var(--color4));
+     animation: Move 4s linear infinite;
+ }
+
+ #section5 .projects-container .borderColor .projects {
+     width: 250px;
+     height: 330px;
      padding: 1rem;
      display: flex;
      flex-direction: column;
@@ -407,28 +403,7 @@
      gap: 0.25rem;
      background: black;
      border-radius: 25px;
-     position: relative;
  }
-
- #section5 .projects-container .projects::before {
-     content: "";
-     position: absolute;
-     inset: -3px;
-     z-index: -1;
-     border-radius: inherit;
-     background: conic-gradient(from var(--angle), var(--color1), var(--color2), var(--color3), var(--color4));
-     ;
-     animation: Move 4s linear infinite;
- }
-
- /* #section5 .projects-container .projects::after {
-     content: "";
-     position: absolute;
-     inset: 0px;
-     background: #111;
-     border-radius: inherit;
-     z-index: -1;
- } */
 
  #section5 .projects-container .projects img {
      width: 100%;
@@ -455,32 +430,29 @@
 
  }
 
- #section6 #contact-me form {
+ #section6 #contact-me .borderColor {
+     padding: 0.25rem;
+     border-radius: 20px;
+     background: conic-gradient(from var(--angle), var(--color1), var(--color2), var(--color3), var(--color4));
+     animation: Move 4s linear infinite;
+ }
+
+ #section6 #contact-me .borderColor form {
      width: 100%;
      height: auto;
      padding: 2rem;
      border-radius: 20px;
      position: relative;
      background: black;
+
  }
 
- #section6 #contact-me form::before {
-     content: "";
-     position: absolute;
-     inset: -3px;
-     z-index: -1;
-     border-radius: inherit;
-     background: conic-gradient(from var(--angle), var(--color1), var(--color2), var(--color3), var(--color4));
-     ;
-     animation: Move 4s linear infinite;
- }
-
- #section6 #contact-me form label {
+ #section6 #contact-me .borderColor form label {
      font-size: 1.25rem;
      font-weight: bolder;
  }
 
- #section6 #contact-me form input {
+ #section6 #contact-me .borderColor form input {
      width: 100%;
      height: 40px;
      border: none;
@@ -490,7 +462,7 @@
      border: 1px solid var(--border);
  }
 
- #section6 #contact-me form textarea {
+ #section6 #contact-me .borderColor form textarea {
      width: 100%;
      height: 100px;
      border: none;
@@ -500,7 +472,7 @@
      border: 1px solid var(--border);
  }
 
- #section6 #contact-me form button {
+ #section6 #contact-me .borderColor form button {
      width: 100%;
      height: 40px;
      outline: none;
@@ -513,7 +485,7 @@
      margin: 10px 0px;
  }
 
- #section6 #contact-me form button:hover {
+ #section6 #contact-me .borderColor form button:hover {
      background: var(--hover);
  }
 
@@ -638,11 +610,11 @@
          width: 100%;
      }
 
-     #section4 .education .education-container {
+     #section4 .education .borderColor .education-container {
          flex-direction: column;
          height: auto;
          align-items: center;
-         width: 90%;
+         width: 100%;
          justify-content: center;
      }
 
