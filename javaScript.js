@@ -14,12 +14,21 @@ window.addEventListener("scroll", function (e) {
 // navBar
 const navBar = document.querySelector("#links")
 const menuToggle = document.querySelector("#menuToggle")
-menuToggle.addEventListener("click", function (e) {
-    if (window.innerWidth <= 768) {
-        navBar.classList.toggle("active")
-    }
+let isOpen = false;
+menuToggle.addEventListener("click", (e) => {
     e.stopPropagation()
-})
+    if (window.innerWidth <= 768) {
+        if (!isOpen) {
+            navBar.classList.add("active");
+            menuToggle.textContent = "❌";
+            isOpen = true;
+        } else {
+            navBar.classList.remove("active");
+            menuToggle.textContent = "☰";
+            isOpen = false;
+        }
+    }
+});
 //Form data
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.querySelector("#userForm");
@@ -62,3 +71,4 @@ progressBar(".bootstrap", 80)
 progressBar(".mangodb", 75)
 progressBar(".expressjs", 70)
 progressBar(".reactjs", 90)
+
