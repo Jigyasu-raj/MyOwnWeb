@@ -96,6 +96,20 @@
      width: 100%;
      z-index: 1000;
  }
+#navbar #links {
+     display: flex;
+     align-items: center;
+     gap: 20px;
+     
+ }
+ #navbar #links a {
+     color: white;
+     text-decoration: none;
+     background: var(--bg);
+     position:relative;
+     padding:5px;
+     
+ }
 
  #navbar #links a::before
  {
@@ -642,4 +656,5 @@
      }
 
  }
+
 
