@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jigyasu-raj.github.io/MyOwnWeb/sitemap.xml
