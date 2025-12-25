@@ -31,26 +31,6 @@ menuToggle.addEventListener("click", (e) => {
         }
     }
 });
-//Form data
-document.addEventListener("DOMContentLoaded", () => {
-    const form = document.querySelector("#userForm");
-    form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        const name = form.querySelector("input[type='text']").value;
-        const mobile = form.querySelector("input[type='number']").value;
-        const address = form.querySelector("textarea").value;
-
-        let entries = JSON.parse(localStorage.getItem("userData"));
-        if (!entries) {
-            entries = []
-        }
-        entries.push({ name, mobile, address });
-        localStorage.setItem("userData", JSON.stringify(entries));
-
-        alert("✅ Data Saved successfully in LocalStorage!");
-        form.reset();
-    })
-})
 // progressBar
 function progressBar(technology, presentage) {
     const fill = document.querySelector(technology);
@@ -73,6 +53,7 @@ progressBar(".bootstrap", 80)
 progressBar(".mangodb", 75)
 progressBar(".expressjs", 70)
 progressBar(".reactjs", 90)
+
 
 
 
