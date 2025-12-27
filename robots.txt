@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jigyasu-raj.github.io/MyOwnWeb/sitemap.xml
+Sitemap: https://skverma895746.github.io/MyOwnWeb/sitemap.xml
+
