@@ -603,7 +603,7 @@
  /* mobile responsive design*/
  @media screen and (max-width:768px) {
     :root{
-        --bg:#071243;
+        --bg:#081a41;
     }
      #navbar .menu-toggle {
          display:flex;
@@ -679,6 +679,7 @@
      }
 
  }
+
 
 
 
